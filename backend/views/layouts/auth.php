@@ -13,11 +13,8 @@ use common\widgets\Alert;
 AppAsset::register($this);
 $this->beginContent('@backend/views/layouts/base.php');
 ?>
-
 <main class="d-flex ">
- <?php echo $this->render('_sidebar') ?>
-
-
+ 
 <div class="content-wrapper p-3">
        
         <?= Alert::widget() ?>
@@ -26,7 +23,7 @@ $this->beginContent('@backend/views/layouts/base.php');
 
 </main>
     
-</div>
+
 
 
 <?php $this->endContent() ?>
